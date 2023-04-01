@@ -702,21 +702,24 @@ testing = ["black (==22.3)", "datasets", "numpy", "pytest", "requests"]
 
 [[package]]
 name = "torch"
-version = "1.10.0+cu111"
+version = "1.13.1"
 description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 category = "main"
 optional = false
-python-versions = ">=3.6.2"
+python-versions = ">=3.7.0"
 files = [
-    {file = "torch-1.10.0%2Bcu111-cp36-cp36m-linux_x86_64.whl", hash = "sha256:136e47d5e04f4b99dac413204939b5d15caad9f229237249d7c81adb1338c17a"},
+    {file = "torch-1.13.1-cp310-none-macosx_11_0_arm64.whl", hash = "sha256:0122806b111b949d21fa1a5f9764d1fd2fcc4a47cb7f8ff914204fd4fc752ed5"},
 ]
 
 [package.dependencies]
 typing-extensions = "*"
 
+[package.extras]
+opt-einsum = ["opt-einsum (>=3.3)"]
+
 [package.source]
 type = "url"
-url = "https://download.pytorch.org/whl/cu111/torch-1.10.0%2Bcu111-cp36-cp36m-linux_x86_64.whl"
+url = "https://download.pytorch.org/whl/cpu/torch-1.13.1-cp310-none-macosx_11_0_arm64.whl"
 [[package]]
 name = "tqdm"
 version = "4.65.0"
@@ -854,4 +857,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "7d1d5488dc750b3e6f081b56c7e57a785f97db09545fc60f7400880d6fdcfbdb"
+content-hash = "9062f4c517990e7ee88e37f1f05b55f8127373208818d22d5bd47780fff73696"
