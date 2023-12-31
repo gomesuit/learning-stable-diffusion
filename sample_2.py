@@ -11,4 +11,4 @@ prompt = "1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, g
 
 image = pipe(prompt, guidance_scale=6).images[0]
 
-image.save("test.png")
+image.save("outputs/test.png")
